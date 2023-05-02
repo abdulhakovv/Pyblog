@@ -30,6 +30,9 @@ svg, img{
   margin: 0 auto;
   padding: 0 2%;
 }
+
+/* HEADER */
+
 .pyblog-header{
   background: var(--bg-white);
 }
@@ -258,6 +261,184 @@ svg, img{
   }
 }
 
+/* MAIN */
+
+.hero{
+  display: flex;
+}
+.hero__reklama{
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hero__reklama-funs{
+  padding: 10px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: var(--bg-white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.reklama__funs-h2{
+  text-align: center;
+  color: var(--color-black);
+  font-size: 24px;
+}
+.journal{
+  margin: 10px 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.reklama__funs-items{
+  display: flex;
+}
+.funs__items-like,
+.funs__items-share,
+.funs__items-message{
+  display: flex;
+  align-items: center;
+}
+.funs__items-share{
+  margin: 0 10px;
+} 
+
+.hero__reklama-teglar{
+  margin: 30px 0;
+  width: 308px;
+  height: 290px;
+  padding: 13px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: var(--bg-white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.reklama__teglar-span{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.teglar__span-h2{
+  margin-right: 38px;
+}
+.reklama__teglar-skills{
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.teglar__skills-div{
+  margin: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.hero__reklama-dino{
+  margin: 30px 0;
+  width: 308px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.reklama__dino-img{
+  margin-bottom: 11px;  
+}
+.reklama__dino-h2{
+  margin: 0 15px;
+  font-size: 20px;
+  color: var(--color-black);
+}
+.reklama__dino-title{
+  margin: 11px 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-black);
+}
+.reklama__dino-btn{
+  margin: 0 65px;
+  width: 170px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--color-white);
+  background: #3571A3;
+  border-radius: 16px;
+}
+.hero__reklama-phone{
+  width: 300px;
+  height: 391px;
+  background: #fff;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.reklama__phone-img{
+  width: 300px;
+  height: 391px;
+  background-image: url(../images/phone.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* MAIN - long-cards */
+
+
+.hero__news{
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hero__news-pages{
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  background: var(--color-white);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.news__pages-choose{
+  margin: 0 14px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+.news__pages-choose svg{
+  margin-right: 10px;
+}
+/* FOOTER */
 .footer-inner{
   margin-top: 20px;
   padding: 20px 40px;
@@ -278,6 +459,7 @@ svg, img{
   justify-content: space-between;
 }
 .footer-inner__top-boxes{
+  margin: 10px 10px;
   display: flex;
   flex-direction: column;
 }
@@ -303,4 +485,7 @@ svg, img{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.black-heart{
+  margin: 0 5px;
 }
