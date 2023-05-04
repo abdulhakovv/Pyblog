@@ -122,6 +122,11 @@ h2{
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
 }
 .header-inner__services-search svg{
   margin-left: 5px;
@@ -131,6 +136,9 @@ h2{
   width: 300px;
   height: 49px;
   background: none;
+}
+.header-inner__services-search:hover{
+  box-shadow: 4px 4px 4px var(--sec-grey);
 }
 .aqua-svgs{
   fill: var(--sec-grey);
@@ -176,6 +184,15 @@ h2{
 }
 .services-svg{
   fill: var(--color-grey);
+}
+.header-inner__services-sun{
+  display: none;
+}
+.sun-light{
+  display: flex;
+}
+.moon-dark{
+  display: none;
 }
 
 
@@ -515,6 +532,16 @@ h2{
   display: flex;
   align-items: center;
 }
+.teglar__skills-div{
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.teglar__skills-div:hover{
+  box-shadow: 4px 4px 4px var(--sec-grey);
+}
 .reklama__funs-title2 img{
   margin-right: 10px;
   margin-left: 3%;
@@ -688,7 +715,7 @@ h2{
 @media screen and (max-width:1045px){
   .hero__reklama-phone{
     width: 225px;
-    height: 380px;
+    height: 340px;
   }
   .reklama__phone-img{
     margin-right: 13px;
@@ -763,12 +790,28 @@ h2{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   background: var(--sec-bg-white);
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.news__pages-choose:hover{
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+.news__pages-choose:hover .cho-svg{
+  fill: var(--color-black);
+}
+.cho-svg{
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
 }
 .filter{
   display: none;
-}
-.news__pages-choose:nth-child(2){
-  border: 1px solid var(--color-black);
 }
 .news__pages-choose svg{
   margin-right: 10px;
@@ -785,7 +828,14 @@ h2{
   .news__pages-choose{
     margin: 0 2px;
     padding: 6px 10px;
-    font-size: 10px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:828px){
+  .news__pages-choose{
+    margin: 0 2px;
+    padding: 6px 10px;
+    font-size: 11px;
   }
 }
 
@@ -951,7 +1001,7 @@ h2{
 /* blue cards */
 
 .hero__news-blue-card{
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 12px 24px;
   display: none;
   flex-direction: column;
@@ -1146,10 +1196,10 @@ h2{
 
 @media screen and (max-width:850px){
   .text__python-h2{
-    font-size: 13px;
+    font-size: 15px;
   }
   .text__python-title{
-    font-size: 9px;
+    font-size: 12px;
   }
   .card__infor-img img{
     width: 150px;
@@ -1212,9 +1262,25 @@ h2{
   .news__pages-choose{
     margin: 0 14px;
     padding: 10px 15px;
-    font-size: 10px;
+    font-size: 13px;
+  }
+  .siz-cho{
+    width: 20px;
+    height: 20px;
   }
 }
+@media screen and (max-width:730px){
+  .news__pages-choose{
+    margin: 0 14px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .siz-cho{
+    width: 20px;
+    height: 20px;
+  }
+}
+
 
 @media screen and (max-width:700px){
   .hero__news-pages{
@@ -1223,7 +1289,7 @@ h2{
   .news__pages-choose{
     margin: 0 14px;
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .news__all-div{
     font-size: 10px;
@@ -1254,6 +1320,19 @@ h2{
   }
   
 }
+
+@media screen and (max-width:750px){
+  .news__pages-choose{
+    margin: 0 14px;
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  .siz-cho{
+    width: 18px;
+    height: 18px;
+  }
+}
+
 @media screen and (max-width:635px){
   .hero__news-pages{
     padding: 5px 5px;
@@ -1261,7 +1340,7 @@ h2{
   .news__pages-choose{
     margin: 0 14px;
     padding: 3px 10px;
-    font-size: 8px;
+    font-size: 10.5px;
   }
   .news__all-div{
     font-size: 10px;
@@ -1293,7 +1372,7 @@ h2{
   .news__pages-choose{
     margin: 0 14px;
     padding: 3px 5px;
-    font-size: 8px;
+    font-size: 10px;
   }
   .news__all-div{
     font-size: 10px;
@@ -1303,7 +1382,7 @@ h2{
     font-size: 14px;
   }
   .text__python-title{
-    font-size: 8px;
+    font-size: 11px;
   }
   .card__infor-img img{
     width: 140px;
@@ -1313,7 +1392,7 @@ h2{
     margin-left: 120px;
   }
   .stiker__span-title{
-    font-size: 10px;
+    font-size: 11px;
   }
   .animated-img{
     width: 17px;
@@ -1330,7 +1409,7 @@ h2{
   .news__pages-choose{
     margin: 0 14px;
     padding: 3px 3px;
-    font-size: 8px;
+    font-size: 10px;
   }
   .hero__news-all{
     display: none;
@@ -1343,7 +1422,7 @@ h2{
     font-size: 14px;
   }
   .text__python-title{
-    font-size: 7px;
+    font-size: 11px;
   }
   .card__infor-img img{
     width: 130px;
@@ -1353,7 +1432,7 @@ h2{
     margin-left: 70px;
   }
   .stiker__span-title{
-    font-size: 7px;
+    font-size: 9px;
   }
   .animated-img{
     width: 17px;
@@ -1363,10 +1442,10 @@ h2{
 @media screen and (max-width:517px){
 
   .text__python-h2{
-    font-size: 13px;
+    font-size: 14px;
   }
   .text__python-title{
-    font-size: 7px;
+    font-size: 10px;
   }
   .card__infor-img img{
     width: 100px;
@@ -1381,7 +1460,7 @@ h2{
     font-size: 12px;
   }
   .text__python-title{
-    font-size: 7px;
+    font-size: 9px;
   }
   .card__infor-img img{
     width: 100px;
@@ -1407,7 +1486,7 @@ h2{
   .news__pages-choose{
     margin: 0 14px;
     padding: 3px 3px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .hero__news-card{
     display: none;
@@ -1500,10 +1579,6 @@ h2{
   margin-left: 12px;
 }
 
-
-/* footer */
-
-
 .footer-inner__bot{
   padding-top: 20px;
   display: flex;
@@ -1513,12 +1588,27 @@ h2{
 .black-heart{
   margin: 0 5px;
 }
-.yel-svgs{
+.top__boxes-links:hover .foot-blue{
   fill: var(--color-blue);
+  color: var(--color-blue);
+}
+.top__boxes-links:hover .boxes__link-title{
+  color: var(--color-blue);
+}
+.boxes__link-title,
+.foot-blue{
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
 }
 .git-link{
   color: var(--color-blue);
 }
 .black-heart{
   fill: var(--color-heart);
+}
+.top__boxes-title:hover{
+  color: var(--color-black);
 }

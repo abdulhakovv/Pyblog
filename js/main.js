@@ -1,4 +1,5 @@
-let eldark_light_btn = document.querySelector(".header-inner__services-moon")
+let elmoon_dark_light_btn = document.querySelector(".header-inner__services-moon")
+let elsun_dark_light_btn = document.querySelector(".header-inner__services-sun")
 let elInput_search = document.querySelector(".services__search-input")
 let elhistory_list = document.querySelector(".services__history-list")
 
@@ -11,7 +12,16 @@ window.addEventListener("click", (evt)=>{
   }
 })
 
-eldark_light_btn.addEventListener("click", ()=>{
-  document.body.classList.toggle("dark")
+elmoon_dark_light_btn.addEventListener("click", ()=>{
+  document.body.classList.add("dark")
+  elsun_dark_light_btn.classList.add("sun-light")
+  elmoon_dark_light_btn.classList.add("moon-dark")
 })
+
+elsun_dark_light_btn.addEventListener("click", ()=>{
+  document.body.classList.remove("dark")
+  elsun_dark_light_btn.classList.remove("sun-light")
+  elmoon_dark_light_btn.classList.remove("moon-dark")
+})
+
 
