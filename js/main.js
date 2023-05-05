@@ -3,12 +3,9 @@ let elsun_dark_light_btn = document.querySelector(".header-inner__services-sun")
 let elInput_search = document.querySelector(".services__search-input")
 let elhistory_list = document.querySelector(".services__history-list")
 
-elInput_search.addEventListener("focus", ()=>{
-  elhistory_list.classList.add("active")
-})
 window.addEventListener("click", (evt)=>{
   if(!evt.target.matches(".services__search-input")){
-    elhistory_list.classList.remove("active")
+    elhistory_list.classList.remove("active");
   }
 })
 
@@ -24,4 +21,7 @@ elsun_dark_light_btn.addEventListener("click", ()=>{
   elmoon_dark_light_btn.classList.remove("moon-dark")
 })
 
+elInput_search.addEventListener("focus", ()=>{
+  elhistory_list.classList.add("active");
+})
 
