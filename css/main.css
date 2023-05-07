@@ -183,6 +183,9 @@ h2{
     width: 280px;
     height: 49px;
   }
+  .services__history-list{
+    width: 280px;
+  }
   .services__search-input{
     width: 190px;
   }
@@ -198,6 +201,9 @@ h2{
   .header-inner__services-search{
     width: 220px;
     height: 49px;
+  }
+  .services__history-list{
+    width: 220px;
   }
   .services__search-input{
     width: 140px;
@@ -234,6 +240,13 @@ h2{
   .services__search-input{
     width: 140px;
   }
+  .list__item-link{
+    font-size: 11px;
+  }
+  .item__link-img{
+    width: 60px;
+    height: 40px;
+  }
   .services__essay-link{
     width: 160px;
     margin: 0 25px;
@@ -258,6 +271,9 @@ h2{
   .header-inner__services-search{
     width: 180px;
     height: 49px;
+  }
+  .services__history-list{
+    width: 180px;
   }
   .services__search-input{
     width: 110px;
