@@ -11,7 +11,7 @@
   --sec-bg-white: #fff;
 }
 .dark{
-  --color-grey: #fff;
+  --color-grey: #d3efea;
   --sec-grey: #2aa5a0;
   --color-black: #fff;
   --color-white: #000;
@@ -484,37 +484,34 @@ h2{
   flex-wrap: wrap;
   align-items: center;
 }
-.stacks__skills-div{
+.stacks__skills-link{
   margin: 5px;
   padding: 5px 10px;
   display: flex;
   align-items: center;
   background: #FFFFFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  background: var(--sec-bg-white);
-}
-.reklama__funs-title2{
-  padding-left: 10px;
-  display: flex;
-  align-items: center;
-}
-.stacks__skills-div{
+  border: 1px solid var(--color-grey);
+  background: var(--sec-bg-white);  
   transition: .3s ease;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
   -ms-transition: .3s ease;
   -o-transition: .3s ease;
 }
-.stacks__skills-div:hover{
-  box-shadow: 4px 4px 4px var(--sec-grey);
+
+.reklama__funs-title2{
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
-.reklama__funs-title2 img{
-  margin-right: 10px;
-  margin-left: 3%;
+.stacks__skills-link:hover{
+  color:#FFDF76;
+  background: #3571a3;
+  border: 1px solid var(--bg-black);
 }
-.stacks__skills-div img{
-  margin-right: 5px;
+.stacks__skills-link:hover .fa-python{
+  color: #FFDF76;
 }
 
 @media screen and (max-width:1045px){
@@ -526,7 +523,7 @@ h2{
     margin-right: 10px;
     font-size: 20px;
   }
-  .stacks__skills-div{
+  .stacks__skills-link{ 
     margin: 2px;
     padding: 5px 10px;
     font-size: 14px;
@@ -536,16 +533,19 @@ h2{
 @media screen and (max-width:1000px){
   .hero__reklama-stacks{
     width: 235px;
-    height: 260px;
+    height: 230px;
   }
   .stacks__span-h2{
     margin-right: 0px;
     font-size: 17px;
   }
-  .stacks__skills-div{
+  .stacks__skills-link{
     margin: 2px;
     padding: 5px 10px;
     font-size: 10px;
+  }
+  .stacks__skills-link .fa-python{
+    font-size: 15px;
   }
 }
 @media screen and (max-width:820px){
@@ -557,10 +557,13 @@ h2{
     margin-right: 0px;
     font-size: 14px;
   }
-  .stacks__skills-div{
+  .stacks__skills-link{
     margin: 2px;
     padding: 5px 10px;
-    font-size: 7px;
+    font-size: 9px;
+  }
+  .stacks__skills-link .fa-python{
+    font-size: 12px;
   }
 }
 
@@ -934,6 +937,7 @@ h2{
 
 .hero__news-all{
   margin: 10px 0;
+  height: 43px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -948,7 +952,6 @@ h2{
   align-items: center;
   color: var(--color-grey);
   background: var(--bg-white);
-  border: 2px solid var(--color-grey);
   border-radius: 10px;
   transition: .3s ease;
   -webkit-transition: .3s ease;
@@ -958,7 +961,7 @@ h2{
 }
 .news__all-div:hover{
   color: var(--color-black);
-  border: 2px solid var(--color-black);
+  border: 1px solid var(--color-black);
 }
 .news__all-div:hover i{
   color: var(--color-black);
@@ -1093,6 +1096,120 @@ h2{
   margin-left: 15px;
   font-size: 12px;
 }
+
+/* SUBSCIREBE */
+
+.hero__news-being-memeber{
+  margin: 15px 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: var(--sec-bg-white);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.being-member__text-span{
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+}
+.being-member__text-span .fa-python:hover{
+  color:var(--color-blue);
+}
+.being-member__text-title{
+  font-size: 18px;
+}
+.being-member__subcribee-link{
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 10px;
+  background: #3571A3;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.fa-user-plus{
+  color: #fff;
+}
+
+@media screen and (max-width:937px){
+  .being-member__text-span{
+    font-size: 20px;
+  }
+  .being-member__text-title{
+    font-size: 16px;
+  }
+  .being-member__subcribee-link{
+    font-size: 15px;
+  }
+  .fa-user-plus{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:880px){
+  .being-member__text-span{
+    font-size: 18px;
+  }
+  .being-member__text-title{
+    font-size: 14px;
+  }
+  .being-member__subcribee-link{
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  .fa-user-plus{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:555px){
+  .being-member__text-span{
+    font-size: 16px;
+  }
+  .being-member__text-span .fa-python{
+    font-size: 16px;
+  }
+  .being-member__text-title{
+    font-size: 13px;
+  }
+  .being-member__subcribee-link{
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+  .fa-user-plus{
+    font-size: 12px;
+  }
+}
+ @media screen and (max-width:484px){
+   .news__being-memeber-subscribe{
+    margin-top: 15px;
+  }
+  .being-member__text-span{
+    font-size: 18px;
+  }
+  .being-member__text-span .fa-python{
+    font-size: 16px;
+  }
+  .being-member__text-title{
+    font-size: 16px;
+  }
+  .being-member__subcribee-link{
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .fa-user-plus{
+    font-size: 14px;
+  } 
+} 
+
 /* blue cards */
 
 .hero__news-blue-card{
@@ -1668,6 +1785,9 @@ h2{
   display: flex;
   align-items: center;
 }
+.top__boxes-links i{
+  font-size: 24px;
+}
 .top__boxes-links:nth-child(2){
   margin: 10px 0;
 }
@@ -1680,9 +1800,6 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.black-heart{
-  margin: 0 5px;
 }
 .top__boxes-links:hover i{
   color: var(--color-blue);
@@ -1742,7 +1859,6 @@ i{
   -ms-transition: .3s ease;
   -o-transition: .3s ease;
 }
-.news__pages-choose
 .fab{
   color: var(--color-grey);
 }
@@ -1751,14 +1867,30 @@ i{
 }
 .fa-eye{
   font-size: 18px;
+  color: var(--sec-grey);
 }
 .sec-insta{
   color: orangered;
+}
+.fa-search,.fa-pencil,.fa-user,.fa-moon,.fa-comment,.fa-bookmark,
+.infor__text-python .fa-python,
+.funs__items-like,
+.funs__items-like .fa-heart,
+.funs__items-share .fa-paper-plane,
+.funs__items-message .fa-message{
+  color: var(--sec-grey);
+}
+.fa-sun{
+  color: #2aa5a0;
 }
 .funs__title-span{
   margin-right: 3px;
   color: orangered;
 }
+.fa-heart{
+  font-size: 16px;
+}
+
 .fa-heart:hover{
   color: var(--color-blue);
 }

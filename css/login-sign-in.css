@@ -8,7 +8,7 @@
 }
 .dark{
   --color-grey: #fff;
-  --color-black: #fff;
+  --color-black: #d3efea;
   --sec-grey: #2aa5a0;
   --color-blue: #FFDF76;
   --bg-white:  #181D1C;
@@ -383,6 +383,19 @@ main {
 .top__boxes-links:hover .boxes__link-title{
   color: var(--color-blue);
 }
+.top__boxes-links:hover i{
+  color: var(--color-blue);
+}
+.fa-heart{
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.fa-heart:hover{
+  color: var(--color-blue);
+}
 .boxes__link-title,
 .foot-blue{
   transition: .3s ease;
@@ -403,3 +416,47 @@ main {
 .top__boxes-title:hover{
   color: var(--color-black);
 }
+
+/* ICONS */
+
+.header-inner__services-moon,
+.header-inner__services-sun,
+.header-inner__services-user{
+  font-size: 30px;
+}
+
+.fa-sun{
+  font-size: 0px;
+}
+.fa-moon{
+  margin: 0 10px;
+  font-size: 35px;
+}
+.sun-light{
+  font-size: 30px;
+}
+.moon-dark{
+  font-size: 0px;  
+}
+i{
+  font-size: 24px;
+  margin-right: 5px;
+  color: var(--color-grey);
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.fa-heart{
+  margin-left: 5px;
+  font-size: 16px;
+}
+/* @media screen and (max-width:450px){
+  .fa-user{
+    font-size: 28px;
+  }
+  .fa-moon{
+    font-size: 30px;
+  }
+} */
