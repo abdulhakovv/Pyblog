@@ -728,6 +728,14 @@ h2{
   color: #fff;
   background: #3571A3;
   border-radius: 16px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.reklama__dino-btn:hover{
+  box-shadow: 3px 3px 4px var(--sec-grey);
 }
 
 @media screen and (max-width:1045px){
@@ -893,13 +901,6 @@ h2{
 }
 .news__pages-choose:hover i{
   color: var(--color-black);
-}
-.cho-svg{
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
 }
 .filter{
   display: none;
@@ -1106,7 +1107,7 @@ h2{
   flex-wrap: wrap;
   justify-content: space-between;
   border-radius: 15px;
-  background: var(--sec-bg-white);
+  background: var(--bg-white);
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -1134,6 +1135,14 @@ h2{
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.being-member__subcribee-link:hover{
+  box-shadow: 3px 3px 4px var(--sec-grey);
 }
 .fa-user-plus{
   color: #fff;
@@ -1747,8 +1756,16 @@ h2{
 }
 .p-choosing{
   margin-right: 8px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
 }
 
+.p-choosing:hover{
+  box-shadow: .5px .5px 4px var(--sec-grey);
+}
 
 /* FOOTER */
 .footer-inner{
@@ -1821,10 +1838,9 @@ h2{
 .top__boxes-title:hover{
   color: var(--color-black);
 }
-
-/* HOVERS */
-
-
+.top__boxes-links{
+  cursor: pointer;
+}
 
 /* ICONS from FONTAWESOME */
 
