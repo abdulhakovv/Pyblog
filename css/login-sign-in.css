@@ -266,6 +266,19 @@ main {
 }
 
 @media screen and (max-width:430px){
+  .hero {
+    height: 500px;
+  }
+  .her-head-img{
+    width: 65px;
+    height: 65px;
+  }
+  .hero-box--title{
+    font-size: 26px;
+  }
+  .hero-box-info{
+    font-size: 15px;
+  }
   .hero-box-form-input {
     width: 300px;
     height: 46px;
@@ -286,24 +299,6 @@ main {
   
 }
 
-@media screen and (max-width:390px){
-  .hero {
-    width: 554px;
-    height: 750px;
-  }
-}
-@media screen and (max-width:357px){
-  .hero {
-    width: 554px;
-    height: 780px;
-  }
-}
-@media screen and (max-width:348px){
-  .hero {
-    width: 554px;
-    height: 800px;
-  }
-}
 @media screen and (max-width:330px){
   .hero-box-form-input {
     width: 280px;
@@ -326,7 +321,6 @@ main {
 }
 
 /* FOOTER */
-
 .footer-inner{
   margin-top: 20px;
   padding: 20px 40px;
@@ -351,10 +345,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-.footer-inner__bot-title{
-  display: flex;
-  align-items: center;
-}
 .top__boxes-span{
   margin-top: 15px 0;
 }
@@ -364,6 +354,9 @@ main {
 .top__boxes-links{
   display: flex;
   align-items: center;
+}
+.top__boxes-links i{
+  font-size: 24px;
 }
 .top__boxes-links:nth-child(2){
   margin: 10px 0;
@@ -378,27 +371,10 @@ main {
   align-items: center;
   justify-content: center;
 }
-.black-heart{
-  margin: 0 5px;
-}
-.top__boxes-links:hover .foot-blue{
-  fill: var(--color-blue);
-  color: var(--color-blue);
-}
-.top__boxes-links:hover .boxes__link-title{
-  color: var(--color-blue);
-}
 .top__boxes-links:hover i{
   color: var(--color-blue);
 }
-.fa-heart{
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
-}
-.fa-heart:hover{
+.top__boxes-links:hover .boxes__link-title{
   color: var(--color-blue);
 }
 .boxes__link-title,
@@ -412,14 +388,11 @@ main {
 .git-link{
   color: var(--color-blue);
 }
-.black-heart{
-  fill: var(--color-heart);
-}
-.top__boxes-title{
-  color: var(--color-grey);
-}
 .top__boxes-title:hover{
   color: var(--color-black);
+}
+.top__boxes-links{
+  cursor: pointer;
 }
 
 /* ICONS */
