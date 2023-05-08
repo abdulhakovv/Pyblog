@@ -40,7 +40,7 @@
 body{
   background: var(--bg-aqua);
 }
-svg, img{
+i, img{
   cursor: pointer;
 }
 svg{
@@ -1926,7 +1926,103 @@ i{
   .fa-user{
     font-size: 28px;
   }
-  .fa-moon{
-    font-size: 30px;
-  }
+}
+
+/* ============================================ */
+
+/* ADD POST  */
+
+.post-inner{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.post-inner__type{
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: var(--bg-white);
+  box-shadow: 1px 1px  3px var(--sec-grey);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.post-inner__type:hover{
+  box-shadow: 4px 4px 4px var(--sec-grey);
+}
+
+.post-inner__heading{
+  padding: 30px 15px;
+  margin: 20px 10px;
+  background: var(--bg-white);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 1px 1px  3px var(--sec-grey);
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.post-inner__heading:hover{
+  box-shadow: 4px 4px 4px var(--sec-grey);
+}
+.heading__text-hd2{
+  color: var(--color-black);
+}
+.heading__text-title{
+  margin: 10px 0;
+}
+.heading__text-link{
+  color: #3571A3;
+  margin: 5px 0;
+}
+hr{
+  margin: 10px 0;
+  height: 1px;
+  background: var(--color-grey);
+}
+.text__list-unorder{
+  margin-left: 35px;
+  list-style:disc;
+}
+.text__codes-title{
+  margin: 0;
+  margin-left: 10px;
+}
+.text__codes-log{
+  margin-left: 20px;
+}
+.heading__text-send{
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 10px;
+  background: #3571A3;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.heading__text-send:hover{
+  box-shadow: 3px 3px 4px var(--sec-grey);
+}
+.fa-user-pen{
+  color: #fff;
 }

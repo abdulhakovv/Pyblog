@@ -9,29 +9,68 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <!-- HEADER -->
   
-    <!-- HEADER -->
-
-    <header class="pyblog-header">
-      <div class="container">
-        <div class="header-inner">
-          <a class="header-inner__link" href="index.html">
-            <img src="./images/sariq_fon_logo.svg" alt="" />
-          </a>
-
-          <div class="header-inner__services">
-          </svg>
-            
-          </form> 
+  <header class="pyblog-header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="header-inner__link" href="index.html">
+          <img src="./images/sariq_fon_logo.svg" alt="">
+        </a>
+  
+        <div class="header-inner__services">
+  
+          <!-- input searching -->
+  
+          <div class="header-inner__services-history">
+            <form class="header-inner__services-search">
+              <input class="services__search-input" autofocus type="text" placeholder="shu yerga yozasiz...">
+              <i class="fas fa-search"></i>
+            </form>
+  
+            <ul class="services__history-list">
+              <li class="history__list-item">
+                <a class="list__item-link" href="#">
+                  <img class="item__link-img" src="./images/list-document.png" alt="">
+                  <p class="item__link-title">Python: map() funktsiyasi</p>
+                </a>
+              </li>
+              <li class="history__list-item">
+                <a class="list__item-link" href="#">
+                  <img class="item__link-img" src="./images/list-text.png" alt="">
+                  <p class="item__link-title">Python: map() funktsiyasi ikkinchi  search result title
+                  </p>
+                  
+                </a>
+              </li>
+              <li class="history__list-item">
+                <a class="list__item-link" href="#">
+                  <img class="item__link-img" src="./images/list-document.png" alt="">
+                  <p class="item__link-title">Python: map() funktsiyasi</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- input searching -->
+  
+          <div class="header-inner__services-essay">
+            <a class="services__essay-link" href="#">
+              <i class="fas fa-pencil"></i>
+              <span class="services__essay-span aqua-col">Maqola yozish</span>
+            </a>
+          </div>
           <a href="./login.html">
             <i class="fas fa-user header-inner__services-user"></i>
           </a>
             <i class="fas fa-moon header-inner__services-moon"></i>
             <i class="fas fa-sun header-inner__services-sun"></i>
-          </div>
         </div>
+  
       </div>
-    </header>
+    </div>
+  </header>
+  
 
     <!-- MAIN -->
 
@@ -39,11 +78,111 @@
       <div class="container">
         <div class="post-inner">
           <div class="post-inner__type">
-            <i class="fas fa-"></i>
+            <i class="fas fa-arrow-down"></i>
+            <h3 class="post-inner__type-hd3">Turkumni tanlang</h3>
           </div>
+          <div class="post-inner__heading">
+            <!-- <div class="post-inner__heading-icons">
+              
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-arrow-rotate-back"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-arrow-rotate-forward"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                Normal text
+                <i class="fas fa-arrow-down"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-i"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+              <a class="heading__icons-link" href="#">
+                <i class="fas fa-"></i>
+              </a>
+            </div> -->
+
+            <div class="post-inner__heading-text">
+              <h1 class="heading__text-hd2">Heading1</h1>
+              <p class="heading__text-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis nisl cursus bibendum sit nulla accumsan sodales ornare. At urna viverra non suspendisse neque, lorem. Pretium condimentum pellentesque gravida id etiam sit sed arcu euismod. Rhoncus proin orci duis scelerisque molestie cursus tincidunt aliquam.</p>
+              <p class="heading__text-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis nisl cursus bibendum sit nulla accumsan sodales ornare. At urna viverra non suspendisse neque, lorem. Pretium condimentum pellentesque gravida id etiam sit sed arcu euismod. Rhoncus proin orci duis scelerisque molestie cursus tincidunt aliquam.</p>
+
+              <a class="heading__text-link" href="#">Link text reuse anchor component</a>
+
+              <hr>
+              <ul class="heading__text-list">
+                <li class="text__list-unorder">
+                  <a class="list__unorder-link" href="#">unordered list item</a>
+                </li>
+                <li class="text__list-unorder">
+                  <a class="list__unorder-link" href="#">unordered list item unordered list item unordered list item unordered list item unordered list item unordered list item unordered</a>
+                </li>
+                <li class="text__list-unorder">
+                  <a class="list__unorder-link" href="#">unordered list item</a>
+                </li>
+              </ul>
+              <p class="heading__text-title">
+                code text code text code text code text code text code
+              </p>
+              <div class="heading__text-codes">
+                tefor (var i=1; i <= 20; i++) <br>
+                {<br>
+                  <p class="text__codes-title">if (i % 15 == 0)</p>
+                  <p class="text__codes-log">console.log("FizzBuzz");</p> 
+                  <p class="text__codes-title">else if (i % 3 == 0)</p>
+                  <p class="text__codes-log">console.log("FizzBuzz");</p> 
+                  <p class="text__codes-title">else if (i % 5 == 0)</p>
+                  <p class="text__codes-log">console.log("FizzBuzz");</p> 
+                  <p class="text__codes-title">else</p>
+                  <p class="text__codes-log">console.log("FizzBuzz");</p> 
+                }
+              </div>
+            </div>
+          </div>
+          
+            <div class="heading__text-send">
+              <i class="fas fa-user-pen"></i>
+              Moderatorga jo’natish
+            </div>
+
         </div>
       </div>
-    </main>
+    </div>
+  </main>
     
     <!-- FOOTER -->
     
@@ -97,5 +236,7 @@
       </div>
     </footer>
   
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
