@@ -59,3 +59,18 @@ elInput_search.addEventListener("focus", ()=>{
   elhistory_list.classList.add("active");
 })
 
+// ==========================================================
+// SIDEBAR WITH FILTER
+
+let sidebar = document.querySelector(".sidebar"); 
+let filter = document.querySelector(".filter"); 
+let crossBtn = document.querySelector(".cross-btn"); 
+ 
+filter.addEventListener("click", ()=>{ 
+  sidebar.classList.add("sidebar_active") 
+  document.body.classList.add("body_active")
+}) 
+crossBtn.addEventListener("click", ()=>{ 
+  sidebar.classList.remove("sidebar_active") 
+  document.body.classList.remove("body_active")
+}) 
