@@ -5,18 +5,42 @@ let elhistory_list = document.querySelector(".services__history-list")
 let elEssay_link = document.querySelector(".services__essay-link")
 let elEssay_saving = document.querySelector(".services__essay-saving")
 let elXmark = document.querySelector(".fa-xmark")
+let elComment = document.querySelectorAll(".fa-comment")
+let elBookMark = document.querySelectorAll(".book-save")
+let elBookTitle = document.querySelector(".post__bookmark-span")
 
 window.addEventListener("click", (evt)=>{
   if(!evt.target.matches(".services__search-input")){
     elhistory_list.classList.remove("active");
   }
 })
-
-elEssay_link.addEventListener("click", ()=>{
-  elEssay_saving.classList.add("show-save")
+elBookMark.forEach(item =>{
+  item.addEventListener("click", ()=>{
+    elEssay_saving.classList.add("show-save")
+  })
 })
-elXmark.addEventListener("click", ()=>{
+elBookMark.forEach(hov =>{
+  hov.addEventListener("mouseover", ()=>{
+    elBookTitle.classList.add("title_of_post")
+  })
+  hov.addEventListener("mouseout", ()=>{
+    elBookTitle.classList.remove("title_of_post")
+  })
+})
+
+setInterval(() => {
   elEssay_saving.classList.remove("show-save")
+}, 3000);
+
+elBookMark.forEach(element =>{
+  element.addEventListener("click", ()=>{
+    element.classList.toggle("fas")
+  })
+})
+elComment.forEach(com =>{
+  com.addEventListener("click", ()=>{
+    com.classList.add("fas")
+  })
 })
 
 elmoon_dark_light_btn.addEventListener("click", ()=>{
