@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/HEAD.svg">
-    <link rel="stylesheet" href="./css/login-sign-in.css"/>
-    <link rel="stylesheet" href="./css/main.css"/> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Pyblog</title>
-  </head>
-  <body>
-    <!-- HEADER -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" href="./images/HEAD.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Pyblog</title>
+</head>
+<body>
 
+<!-- HEADER -->
 <header class="pyblog-header">
   <div class="container">
     <div class="header-inner">
@@ -29,65 +28,35 @@
   </div>
 </header>
 
-    <!-- MAIN -->
-    <main>
-      <section class="log login-log">
-        <div class="container">
-          <div class="log-in">
-            <div class="log-box">
-            <img class="her-head-img" src="./images/HEAD.svg" alt="#">
-
-            <div class="log-second-container">
-
-              <h1 class="log-box--title">Profilga kirish</h1>
-              <h2 class="log-box-info">Tanlangan maqolalarga o’tish uchun..</h2>
-              <form class="login-form">
-  
-                <div class="login-form--in">
-                  <div class="login-form--input-box register-form--input-box">
-                    <h3 class="log-box-form--title">
-                      Email
-                    </h3>
-                    <input class="log-box-form-input" autofocus type="text" required>
-                  </div>
-                  
-                  <div class="login-form--input-box register-form--input-box">
-                    <h3 class="log-box-form--title">
-                      Parol
-                    </h3>
-                    <input class="log-box-form-input" autofocus type="password" required>
-                  </div>
-                  
-                <div class="checkbox-save">
-                  <div class="check-box">
-                    <input class="check-box__inp" type="checkbox">
-                    <p class="check-box--info" uncopy="return flase;">
-                      Meni eslab qoling.
-                    </p>
-    
-                  </div>
-  
-                  <a class="checkbox-save--link" href="#">
-                    Parol esdan chiqdimi ?
-                  </a>
-                </div>
-                <button class="form-btn" type="submit">Kirish</button>
-                </div>
-              </form>
-              <div class="log-if-have-ac">
-                <a href="register.html" class="log-if-have-ac-link">
-                  Hali shaxsiy profil yo’qmi ? <span> Ro’yhatdan o’ting</span>
-                </a>
-              </div>
-  
-            </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
+<!-- MAIN -->
+<main class="cont-main">
+  <div class="container">
+    <div class="main-inner">
+      <h1 class="main__title">Aloqa</h1>
+      <h3 class="main__text">Savol va takliflar masalasida bog’lanish uchun ma’lumotlarimiz</h3>
+      <div class="main__email main__contact">
+        <span>Elektron manzil:</span>
+        <a class="main__blue" href="https://contact@pyblog.uz">contact@pyblog.uz</a>
+      </div>
+      <div class="main__email main__contact">
+        <span>Telefon raqam:</span>
+        <a class="main__blue" href="tel:+99899 899 90 05">+99899 899 90 05</a>
+      </div>
+      <div class="main__email main__contact">
+        <span>Manzil:</span>
+        <span class="main__blue">170100 , Andijon shahar, Sog’lom Avlod ko’chasi 24a - uy </span>
+      </div>
+      <a>Blogni ijtimpiy tarmoqlarda ulashish: </a>
+      <div class="main__socials">
+        <div class="main__social--app"><i class="fab fa-facebook"></i></div>
+        <div class="main__social--app"><i class="fab fa-instagram" ></i></div>
+        <div class="main__social--app"><i class="fab fa-telegram"></i></div>
+        <div class="main__social--app"><i class="fab fa-twitter"></i></div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- FOOTER -->
 
     <footer class="pyblog-footer">
       <div class="container">
@@ -150,6 +119,8 @@
       </div>
     </footer>
 
-    <script src="./js/main.js"></script>
-  </body>
+
+
+  <script src="./js/main.js"></script>
+</body>
 </html>

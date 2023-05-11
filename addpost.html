@@ -11,65 +11,27 @@
 <body>
   <!-- HEADER -->
   
-  <header class="pyblog-header">
-    <div class="container">
-      <div class="header-inner">
-        <a class="header-inner__link" href="index.html">
-          <img src="./images/sariq_fon_logo.svg" alt="">
+<header class="pyblog-header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="header-inner__link" href="index.html">
+        <img src="./images/sariq_fon_logo.svg" alt="">
+      </a>
+
+      <div class="header-inner__services">
+
+        <i class="fas fa-search second-loop"></i>
+        <a href="#">
+          <i class="fas fa-pencil second-pencil"></i>
         </a>
-  
-        <div class="header-inner__services">
-  
-          <!-- input searching -->
-  
-          <div class="header-inner__services-history">
-            <form class="header-inner__services-search">
-              <input class="services__search-input" autofocus type="text" placeholder="shu yerga yozasiz...">
-              <i class="fas fa-search"></i>
-            </form>
-  
-            <ul class="services__history-list">
-              <li class="history__list-item">
-                <a class="list__item-link" href="#">
-                  <img class="item__link-img" src="./images/list-document.png" alt="">
-                  <p class="item__link-title">Python: map() funktsiyasi</p>
-                </a>
-              </li>
-              <li class="history__list-item">
-                <a class="list__item-link" href="#">
-                  <img class="item__link-img" src="./images/list-text.png" alt="">
-                  <p class="item__link-title">Python: map() funktsiyasi ikkinchi  search result title
-                  </p>
-                  
-                </a>
-              </li>
-              <li class="history__list-item">
-                <a class="list__item-link" href="#">
-                  <img class="item__link-img" src="./images/list-document.png" alt="">
-                  <p class="item__link-title">Python: map() funktsiyasi</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-  
-          <!-- input searching -->
-  
-          <div class="header-inner__services-essay">
-            <a class="services__essay-link" href="#">
-              <i class="fas fa-pencil"></i>
-              <span class="services__essay-span aqua-col">Maqola yozish</span>
-            </a>
-          </div>
-          <a href="./login.html">
-            <i class="fas fa-user header-inner__services-user"></i>
-          </a>
-            <i class="fas fa-moon header-inner__services-moon"></i>
-            <i class="fas fa-sun header-inner__services-sun"></i>
-        </div>
-  
+        <a href="./login.html">
+          <i class="fas fa-user header-inner__services-user"></i>
+        </a>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
   
 
     <!-- MAIN -->
@@ -186,45 +148,57 @@
     
     <!-- FOOTER -->
     
+
     <footer class="pyblog-footer">
       <div class="container">
         <div class="footer-inner">
           <div class="footer-inner__top">
-
+    
             <div class="footer-inner__top-boxes">
               <a class="footer-inner__top-link" href="index.html">
                 <img src="./images/sariq_fon_logo.svg" alt="">
               </a>
               <span class="top__boxes-span">Python hamdadasturlashga oid o’zbek <br> tilidagi blog </span>
+              <span class="top__boxes-da-li moon-span">
+                <i class="fas fa-moon header-inner__services-moon"></i>
+                Oymomo
+              </span>
+              <span class="top__boxes-da-li sun-span">
+                <i class="fas fa-sun header-inner__services-sun"></i>
+                Serquyosh
+              </span>
             </div>
       
             <div class="footer-inner__top-boxes">
-              <a class="top__boxes-title" href="#">Bosh sahifa</a>
+              <a class="top__boxes-title" href="index.html">Bosh sahifa</a>
               <a class="top__boxes-title" href="#">Blog haqida</a>
               <a class="top__boxes-title" href="#">Bog’lanish</a>
             </div>
             <div class="footer-inner__top-boxes">
-              <a class="top__boxes-title" href="register.html">Kirish</a>
-              <a class="top__boxes-title" href="#">Ro’yhatdan o’tish</a>
+              <span class="top__boxs-span">
+                <a class="top__boxes-title" href="./login.html">Kirish</a> /
+                <a class="top__boxes-title" href="./register.html">Ro’yhatdan o’tish</a>
+              </span>
               <a class="top__boxes-title" href="#">Qonun qoidalar</a>
+              <a class="top__boxes-title" href="./profile.html">Profile</a>
             </div>
             <div class="footer-inner__top-boxes">
-
+    
               <div class="top__boxes-links">
                 <i class="fab fa-telegram"></i>
                 <p class="boxes__link-title">Telegram</p>  
               </div>
-
+    
               <div class="top__boxes-links">
                 <i class="fab fa-instagram"></i> 
                 <p class="boxes__link-title">Instagram</p>  
               </div>
-
+    
               <div class="top__boxes-links">       
                 <i class="fab fa-facebook"></i>
                 <p class="boxes__link-title">Facebook</p>  
               </div>
-
+    
             </div>
           </div>
           <div class="footer-inner__bot">
@@ -235,6 +209,7 @@
         </div>
       </div>
     </footer>
+
   
 
     <script src="./js/main.js"></script>
