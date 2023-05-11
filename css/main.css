@@ -60,7 +60,7 @@ h2{
 
 /* HEADER */
 .pyblog-header{
-  background: var(--sec-bg-white);
+  background: var(--bg-white);
 }
 .header-inner{
   padding: 19px 0;
@@ -76,7 +76,6 @@ h2{
 }
 
 /* input searching */
-
 .header-inner__services-history{
   position: relative;
 }
@@ -174,7 +173,7 @@ h2{
 }
 .second-loop{
   font-size: 0;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 .second-pencil{
   font-size: 0px;
@@ -224,9 +223,7 @@ h2{
     width: 20px;
     height: 20px;
   }
-  .header-inner__services-moon{
-    margin-bottom: 20px;
-  }
+
 }
 
 @media screen and (max-width:710px){
@@ -254,9 +251,7 @@ h2{
   .header-inner__services{
     margin-right: 20px;
   }
-  .header-inner__services-moon{
-    margin-bottom: 20px;
-  }
+
 }
 
 
@@ -281,9 +276,7 @@ h2{
   .header-inner__services{
     margin-right: 20px;
   }
-  .header-inner__services-moon{
-    margin-bottom: 20px;
-  }
+
 }
 @media screen and (max-width:590px){
   .header-inner__services-search{
@@ -371,9 +364,9 @@ h2{
 
 .services__essay-saving{
   margin-top: 15px;
-  top: 120%;
+  top: 15%;
   right: -320px;
-  position: absolute;
+  position: fixed;
   width: 310px;
   height: 49px;
   display: flex;
@@ -939,17 +932,17 @@ h2{
 .hero__news{
   margin: 0;
   padding: 30px 0px;
-  padding-left: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 .hero__news-pages{
-  padding: 0px 14px;
-  height: 62px;
+  padding: 10px 14px;
+  /* height: 62px; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
   background: var(--bg-white);
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -958,7 +951,7 @@ h2{
   -o-border-radius: 10px;
 }
 .news__pages-choose{
-  margin: 0 14px;
+  /* margin: 0 14px; */
   padding: 10px 15px;
   cursor: pointer;
   display: flex;
@@ -983,12 +976,6 @@ h2{
 }
 .news__pages-choose:hover i{
   color: var(--color-black);
-}
-.filter{
-  display: none;
-}
-.news__pages-choose svg{
-  margin-right: 10px;
 }
 
 @media screen and (max-width:1155px){
@@ -1342,7 +1329,7 @@ h2{
   }
   .being-member__subcribee-link{
     padding: 10px 10px;
-    font-size: 15px;
+    font-size: 12px;
   }
   .fa-user-plus{
     font-size: 15px;
@@ -1382,7 +1369,7 @@ h2{
   }
   .being-member__subcribee-link{
     padding: 10px 15px;
-    font-size: 15px;
+    font-size: 12px;
   }
   .fa-user-plus{
     font-size: 14px;
@@ -1427,9 +1414,12 @@ h2{
 }
 .text__umumiy-cloud{
   margin: 15px 0;
-  margin-left: 50px;
-  width: 200px;
-  height: 150px;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 .text__umumiy-h2{
   font-size: 18px;
@@ -1482,16 +1472,12 @@ h2{
 @media screen and (max-width:388px){
   .text__umumiy-cloud{
     margin: 15px 0;
-    margin-left: 40px;
   }
   .text__umumiy-h2{
     font-size: 16px;
   }
 }
 @media screen and (max-width:357px){
-  .text__umumiy-cloud{
-    margin-left: 30px;
-  }
   .text__umumiy-h2{
     font-size: 16px;
   }
@@ -1853,12 +1839,12 @@ h2{
     font-size: 9px;
   }
   .news__pages-choose{
-    margin: 0 14px;
-    padding: 7px 9px;
-    font-size: 10px;
+    margin: 0 5px;
+    padding: 10px 9px;
+    font-size: 12px;
   }
   .news__pages-choose i{
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .infor__text-python{
@@ -2066,7 +2052,7 @@ h2{
 /* FOOTER */
 .footer-inner{
   margin-top: 20px;
-  padding: 20px 40px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   color: var(--color-grey);
@@ -2156,11 +2142,7 @@ h2{
   cursor: pointer;
 }
 
-@media screen and (max-width:780px){
-.fa-moon{
-  margin-top: 20px;
-}
-} 
+ 
 /* ICONS from FONTAWESOME */
 
 .emojis__post-span{
@@ -2265,7 +2247,7 @@ i{
 
 .post-inner__heading{
   padding: 30px 15px;
-  margin: 20px 10px;
+  margin: 20px 0;
   background: var(--bg-white);
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -2278,6 +2260,9 @@ i{
   -moz-transition: .3s ease;
   -ms-transition: .3s ease;
   -o-transition: .3s ease;
+}
+.post-inner__heading p{
+  margin:20px 0;
 }
 .post-inner__heading:hover{
   box-shadow: 4px 4px 4px var(--sec-grey);

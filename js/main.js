@@ -1,24 +1,24 @@
-let elmoon_dark_light_btn = document.querySelector(".header-inner__services-moon")
-let elsun_dark_light_btn = document.querySelector(".header-inner__services-sun")
+
 let elMoonSpan = document.querySelector(".moon-span")
 let elSunSpan = document.querySelector(".sun-span")
 let elInput_search = document.querySelector(".services__search-input")
 let elhistory_list = document.querySelector(".services__history-list")
-let elEssay_link = document.querySelector(".services__essay-link")
 let elEssay_saving = document.querySelector(".services__essay-saving")
 let elComment = document.querySelectorAll(".fa-comment")
 let elBookMark = document.querySelectorAll(".book-save")
 let elSecondLoop = document.querySelector(".second-loop")
 let elSearchHistory = document.querySelector(".header-inner__services-history")
 
-
-window.addEventListener("click", (evt)=>{
-  if(!evt.target.matches(".services__search-input")){
-    elhistory_list.classList.remove("active");
-  }
+elMoonSpan.addEventListener("click", ()=>{
+  document.body.classList.add("dark")
+  elSunSpan.classList.add("sun-light")
+  elMoonSpan.classList.add("moon-dark")
 })
-elInput_search.addEventListener("focus", ()=>{
-  elhistory_list.classList.add("active");
+
+elSunSpan.addEventListener("click", ()=>{
+  document.body.classList.remove("dark")
+  elSunSpan.classList.remove("sun-light")
+  elMoonSpan.classList.remove("moon-dark")
 })
 
 elSecondLoop.addEventListener("click", ()=>{ 
@@ -72,14 +72,3 @@ crossBtn.addEventListener("click", ()=>{
 }) 
 
 
-elmoon_dark_light_btn.addEventListener("click", ()=>{
-  document.body.classList.add("dark")
-  elSunSpan.classList.add("sun-light")
-  elMoonSpan.classList.add("moon-dark")
-})
-
-elsun_dark_light_btn.addEventListener("click", ()=>{
-  document.body.classList.remove("dark")
-  elSunSpan.classList.remove("sun-light")
-  elMoonSpan.classList.remove("moon-dark")
-})

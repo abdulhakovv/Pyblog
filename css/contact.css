@@ -370,17 +370,20 @@ main{
   -moz-transition: .3s ease;
   -ms-transition: .3s ease;
   -o-transition: .3s ease;
-}
+} 
 .main-inner:hover{
   box-shadow: 3px 3px 3px var(--sec-grey);
 }
-.main-inner h1, h3, span{
+/* .main-inner h1, h3{
   color: var(--color-black);
-}   
+}    */
 .main__contact{
   display: flex;
   align-items: center;
   margin: 20px 0px;
+}
+.main__contact{
+  /* color:var(--color-black); */
 }
 .main__blue{
   color: blue;

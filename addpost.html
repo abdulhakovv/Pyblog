@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pyblog</title>
-  <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <!-- HEADER -->
@@ -40,100 +40,20 @@
       <div class="container">
         <div class="post-inner">
           <div class="post-inner__type">
-            <i class="fas fa-arrow-down"></i>
-            <h3 class="post-inner__type-hd3">Turkumni tanlang</h3>
+           <form action="">
+            <select name="category" id="cat">
+              <option value="0" selected> Turkumni tanlang</option>
+              <option value="1">javascript</option>
+              <option value="1">CSS</option>
+            </select>
+           </form>
+      
           </div>
           <div class="post-inner__heading">
-            <!-- <div class="post-inner__heading-icons">
-              
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-arrow-rotate-back"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-arrow-rotate-forward"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                Normal text
-                <i class="fas fa-arrow-down"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-i"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-              <a class="heading__icons-link" href="#">
-                <i class="fas fa-"></i>
-              </a>
-            </div> -->
-
-            <div class="post-inner__heading-text">
-              <h1 class="heading__text-hd2">Heading1</h1>
-              <p class="heading__text-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis nisl cursus bibendum sit nulla accumsan sodales ornare. At urna viverra non suspendisse neque, lorem. Pretium condimentum pellentesque gravida id etiam sit sed arcu euismod. Rhoncus proin orci duis scelerisque molestie cursus tincidunt aliquam.</p>
-              <p class="heading__text-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis nisl cursus bibendum sit nulla accumsan sodales ornare. At urna viverra non suspendisse neque, lorem. Pretium condimentum pellentesque gravida id etiam sit sed arcu euismod. Rhoncus proin orci duis scelerisque molestie cursus tincidunt aliquam.</p>
-
-              <a class="heading__text-link" href="#">Link text reuse anchor component</a>
-
-              <hr>
-              <ul class="heading__text-list">
-                <li class="text__list-unorder">
-                  <a class="list__unorder-link" href="#">unordered list item</a>
-                </li>
-                <li class="text__list-unorder">
-                  <a class="list__unorder-link" href="#">unordered list item unordered list item unordered list item unordered list item unordered list item unordered list item unordered</a>
-                </li>
-                <li class="text__list-unorder">
-                  <a class="list__unorder-link" href="#">unordered list item</a>
-                </li>
-              </ul>
-              <p class="heading__text-title">
-                code text code text code text code text code text code
-              </p>
-              <div class="heading__text-codes">
-                tefor (var i=1; i <= 20; i++) <br>
-                {<br>
-                  <p class="text__codes-title">if (i % 15 == 0)</p>
-                  <p class="text__codes-log">console.log("FizzBuzz");</p> 
-                  <p class="text__codes-title">else if (i % 3 == 0)</p>
-                  <p class="text__codes-log">console.log("FizzBuzz");</p> 
-                  <p class="text__codes-title">else if (i % 5 == 0)</p>
-                  <p class="text__codes-log">console.log("FizzBuzz");</p> 
-                  <p class="text__codes-title">else</p>
-                  <p class="text__codes-log">console.log("FizzBuzz");</p> 
-                }
-              </div>
-            </div>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laudantium dolorum voluptate beatae recusandae, quo eum tempora, exercitationem hic iure dicta ex fugiat cupiditate iste doloribus molestiae alias labore distinctio?</span></p>
+            <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur exercitationem sapiente ipsam totam, at magni repudiandae minus laudantium quae facere omnis amet modi ratione ea itaque corporis nostrum quos ipsa.</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae saepe blanditiis praesentium necessitatibus expedita dignissimos rerum veritatis minus unde quia? Alias explicabo magni dignissimos consequatur debitis voluptates vitae eos beatae.</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos blanditiis repellat nobis rerum necessitatibus praesentium quo, sint nihil nulla culpa commodi esse rem sequi, sapiente quas. Aliquid, dolore earum.</span></p>
           </div>
           
             <div class="heading__text-send">

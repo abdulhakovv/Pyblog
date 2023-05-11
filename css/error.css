@@ -86,6 +86,7 @@ h2 {
   font-size: 24px;
   margin: 20px 0px;
   text-align: center;
+  color:  var(--color-grey);
 }
 .error__button{
   background: #3571A3;
