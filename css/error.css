@@ -73,6 +73,14 @@ h2 {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.error-inner:hover{
+  box-shadow: 3px 3px 4px #7a8280;
 }
 .error__title{
   font-size: 24px;
@@ -81,13 +89,20 @@ h2 {
 }
 .error__button{
   background: #3571A3;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   cursor: pointer;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.error__button:hover{
+  box-shadow: 3px 3px 4px #7a8280;
 }
 .error__image{
   width: 30%;
